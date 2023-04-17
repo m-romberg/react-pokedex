@@ -5,7 +5,7 @@ const POKEMON_IMG_API = `https://raw.githubusercontent.com/PokeAPI/sprites/maste
  * returns single jsx pokecard
 */
 
-function Pokecard (id, name, type, base_experience){
+function Pokecard ({id, name, type, base_experience}){
   const imgSrc = `${POKEMON_IMG_API}/${id}.png`;
   return (
   <div className='Pokecard'>

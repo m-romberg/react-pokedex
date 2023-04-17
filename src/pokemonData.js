@@ -9,4 +9,4 @@ const pokeData = [
   {id: 133, name: 'Eevee',      type: 'normal',   base_experience: 65}
 ];
 
-export {pokeData};
+export default pokeData;

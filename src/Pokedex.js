@@ -1,16 +1,25 @@
 import Pokecard from './Pokecard'
 /**
- * GetPokedexComponents:
+ * Pokedex:
  * Takes in an array of pokemon data and
  * returns an array of jsx pokecards
  */
-function GetPokedexComponents(pokeData) {
+function Pokedex({pokeData}) {
 
-  const pokecardComponents = pokeData.map(
-    poke => <Pokecard pokeData={poke}/>
-  )
-  return pokecardComponents;
+  return (
+    <div>
+      {pokeData.map(
+        poke => (
+        <Pokecard 
+          pokemon={poke} />)
+      )}
+    </div>
+
+  );
+
+
+  // return pokecardComponents;
 
 }
 
-export default GetPokedexComponents;
+export default Pokedex;
