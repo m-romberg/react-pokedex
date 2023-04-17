@@ -11,7 +11,10 @@ function Pokedex({pokeData}) {
       {pokeData.map(
         poke => (
         <Pokecard 
-          pokemon={poke} />)
+          id = {poke.id}
+          name = {poke.name}
+          type = {poke.type}
+          base_experience = {poke.base_experience} />)
       )}
     </div>
 
