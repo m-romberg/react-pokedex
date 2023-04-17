@@ -7,7 +7,7 @@ import Pokecard from './Pokecard'
 function Pokedex({ pokeData }) {
 
   return (
-    <div>
+    <div className = "Pokedex"> 
       {pokeData.map(
         poke => (
           <Pokecard
